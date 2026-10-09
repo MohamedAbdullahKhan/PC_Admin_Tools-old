@@ -1,0 +1,100 @@
+============================================================
+  PC ADMIN & PERFORMANCE TOOL  v3.6  -- Web-Service Edition
+  © 2024-2026 Abdullah | PC Admin & Performance Tool v3.6 | All Rights Reserved
+============================================================
+  Target   : mini.ngidomain.local
+  Username : mabdullahad
+  Transport: ntlm
+  Date/Time: 2026-09-30 15:32:10
+  Tasks    : 7 selected
+  Log File : AdminTool_mini.ngidomain.local_20260930_153210.log
+============================================================
+
+  Session established
+
+▶ [1/7]  Clear All Users' Temp Files
+    Removes %TEMP% from every user profile, incl. SYSTEM/service accounts
+    ──────────────────────────────────────────────────
+      Running as : NGIDOMAIN\mabdullahAD
+      Computer   : MINI
+      Found 11 user profile folder(s) under C:\Users
+      [Administrator] Freed 0 MB  (0 items)
+      [jiyadad] Freed 0 MB  (0 items)
+      [mabdullahad] Freed 0 MB  (0 items)
+      [michaelad] Freed 0 MB  (0 items)
+      [mini] Freed 0 MB  (0 items)
+      [mini.NGIDOMAIN] Freed 575.51 MB  (679 file(s) skipped -- in use / access denied)
+      [TEMP] Freed 0 MB  (0 items)
+      [SYSTEM] Freed 0 MB
+      [LocalService] Freed 0.6 MB (13 file(s) skipped -- in use)
+      [NetworkService] Freed 0.16 MB
+      ------------------------------------------------
+      Profiles processed: 10   |   TOTAL FREED: 576.27 MB
+      NOTE: 1 profile(s) had files in use and were partially skipped (normal for the logged-in user's active session)
+    ✓ Completed in 1.2s
+
+
+▶ [2/7]  Clear Windows System Temp (C:\Windows\Temp)
+    Deletes files in the Windows system temp directory
+    ──────────────────────────────────────────────────
+      Deleted 49 items | Freed: 133.57 MB
+    ✓ Completed in 0.6s
+
+
+▶ [3/7]  Clear Windows Prefetch Files
+    Removes .pf files from C:\Windows\Prefetch
+    ──────────────────────────────────────────────────
+      Removed 302 prefetch files | Freed: 5.33 MB
+    ✓ Completed in 0.8s
+
+
+▶ [4/7]  Clear Thumbnail Cache (All Users)
+    Deletes thumbcache_*.db from all user Explorer profiles
+    ──────────────────────────────────────────────────
+      [Administrator] Removed 0 files | Freed: 0 MB
+      [jiyadad] Removed 0 files | Freed: 0 MB
+      [mabdullahad] Removed 0 files | Freed: 0 MB
+      [michaelad] Removed 0 files | Freed: 0 MB
+      [mini] Removed 0 files | Freed: 0 MB
+      [mini.NGIDOMAIN] Removed 15 files | Freed: 4.01 MB
+      Total thumbnail cache freed: 4.01 MB
+    ✓ Completed in 0.6s
+
+
+▶ [5/7]  Clear Windows Update Download Cache
+    Stops WU/BITS, clears SoftwareDistribution\Download, restarts services
+    ──────────────────────────────────────────────────
+      Stopping Windows Update & BITS services...
+      Cache cleared | Freed: 2.38 MB
+      Windows Update & BITS services restarted
+    ✓ Completed in 5.3s
+
+
+▶ [6/7]  Clear Browser Caches (Chrome / Edge / Firefox)
+    Purges browser cache folders for all user profiles
+    ──────────────────────────────────────────────────
+      [Administrator] Microsoft Edge: Freed 0 MB
+      [jiyadad] Microsoft Edge: Freed 0 MB
+      [jiyadad] Google Chrome: Freed 0 MB
+      [michaelad] Microsoft Edge: Freed 0 MB
+      [michaelad] Google Chrome: Freed 0 MB
+      [mini] Microsoft Edge: Freed 0 MB
+      [mini.NGIDOMAIN] Microsoft Edge: Freed 84.92 MB
+      [mini.NGIDOMAIN] Google Chrome: Freed 38.27 MB
+      TOTAL browser cache freed: 123.19 MB
+    ✓ Completed in 1.0s
+
+
+▶ [7/7]  Empty Recycle Bin (All Drives & Users)
+    Permanently empties the Recycle Bin on all drives
+    ──────────────────────────────────────────────────
+      Recycle Bin emptied: 0 items removed
+    ✓ Completed in 0.7s
+
+
+============================================================
+  ALL TASKS COMPLETED ✓
+  Finished : 2026-09-30 15:32:20
+  Log saved: AdminTool_mini.ngidomain.local_20260930_153210.log
+  © 2024-2026 Abdullah | PC Admin & Performance Tool v3.6 | All Rights Reserved
+============================================================

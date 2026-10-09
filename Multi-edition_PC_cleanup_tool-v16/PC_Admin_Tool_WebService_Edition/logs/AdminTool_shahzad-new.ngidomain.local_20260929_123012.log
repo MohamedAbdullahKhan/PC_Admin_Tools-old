@@ -1,0 +1,83 @@
+============================================================
+  PC ADMIN & PERFORMANCE TOOL  v3.6  -- Web-Service Edition
+  © 2024-2026 Abdullah | PC Admin & Performance Tool v3.6 | All Rights Reserved
+============================================================
+  Target   : shahzad-new.ngidomain.local
+  Username : mabdullahad
+  Transport: ntlm
+  Date/Time: 2026-09-29 12:30:12
+  Tasks    : 5 selected
+  Log File : AdminTool_shahzad-new.ngidomain.local_20260929_123012.log
+============================================================
+
+  Session established
+
+▶ [1/5]  Clear All Users' Temp Files
+    Removes %TEMP% from every user profile, incl. SYSTEM/service accounts
+    ──────────────────────────────────────────────────
+      Running as : NGIDOMAIN\mabdullahAD
+      Computer   : SHAHZAD-NEW
+      Found 9 user profile folder(s) under C:\Users
+      [jiyadad] Freed 0 MB  (0 items)
+      [mabdullahad] Freed 0.18 MB  (12 items)
+      [michaelad] Freed 0 MB  (0 items)
+      [satharad] Freed 0 MB  (0 items)
+      [shahzad] Freed 1034.35 MB  (680 file(s) skipped -- in use / access denied)
+      [SYSTEM] Freed 0 MB
+      [LocalService] Freed 0 MB
+      [NetworkService] Freed 1.04 MB
+      ------------------------------------------------
+      Profiles processed: 8   |   TOTAL FREED: 1035.57 MB
+      NOTE: 1 profile(s) had files in use and were partially skipped (normal for the logged-in user's active session)
+    ✓ Completed in 1.7s
+
+
+▶ [2/5]  Clear Windows System Temp (C:\Windows\Temp)
+    Deletes files in the Windows system temp directory
+    ──────────────────────────────────────────────────
+      Deleted 146 items | Freed: 31.97 MB
+    ✓ Completed in 0.7s
+
+
+▶ [3/5]  Clear Thumbnail Cache (All Users)
+    Deletes thumbcache_*.db from all user Explorer profiles
+    ──────────────────────────────────────────────────
+      [jiyadad] Removed 0 files | Freed: 0 MB
+      [mabdullahad] Removed 15 files | Freed: 2.01 MB
+      [michaelad] Removed 0 files | Freed: 0 MB
+      [satharad] Removed 0 files | Freed: 0 MB
+      [shahzad] Removed 15 files | Freed: 54.22 MB
+      Total thumbnail cache freed: 56.23 MB
+    ✓ Completed in 0.6s
+
+
+▶ [4/5]  Clear Windows Update Download Cache
+    Stops WU/BITS, clears SoftwareDistribution\Download, restarts services
+    ──────────────────────────────────────────────────
+      Stopping Windows Update & BITS services...
+      Cache cleared | Freed: 28.46 MB
+      Windows Update & BITS services restarted
+    ✓ Completed in 5.8s
+
+
+▶ [5/5]  Clear Browser Caches (Chrome / Edge / Firefox)
+    Purges browser cache folders for all user profiles
+    ──────────────────────────────────────────────────
+      [jiyadad] Microsoft Edge: Freed 0 MB
+      [jiyadad] Google Chrome: Freed 0 MB
+      [mabdullahad] Microsoft Edge: Freed 0 MB
+      [mabdullahad] Google Chrome: Freed 0 MB
+      [michaelad] Microsoft Edge: Freed 0 MB
+      [satharad] Microsoft Edge: Freed 0 MB
+      [shahzad] Microsoft Edge: Freed 222.09 MB
+      [shahzad] Google Chrome: Freed 5.71 MB
+      TOTAL browser cache freed: 227.80 MB
+    ✓ Completed in 1.6s
+
+
+============================================================
+  ALL TASKS COMPLETED ✓
+  Finished : 2026-09-29 12:30:23
+  Log saved: AdminTool_shahzad-new.ngidomain.local_20260929_123012.log
+  © 2024-2026 Abdullah | PC Admin & Performance Tool v3.6 | All Rights Reserved
+============================================================

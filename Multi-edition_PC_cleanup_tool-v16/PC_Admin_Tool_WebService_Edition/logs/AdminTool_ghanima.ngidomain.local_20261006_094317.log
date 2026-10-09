@@ -1,0 +1,37 @@
+============================================================
+  PC ADMIN & PERFORMANCE TOOL  v3.6  -- Web-Service Edition
+  © 2024-2026 Abdullah | PC Admin & Performance Tool v3.6 | All Rights Reserved
+============================================================
+  Target   : ghanima.ngidomain.local
+  Username : mabdullahad@ngidomain.local
+  Transport: ntlm
+  Date/Time: 2026-10-06 09:43:17
+  Tasks    : 1 selected
+  Log File : AdminTool_ghanima.ngidomain.local_20261006_094317.log
+============================================================
+
+  Session established
+
+▶ [1/1]  Map Network Drive for a User (Shared Folder -> Drive Letter)
+    Maps a shared folder to a drive letter for ONE user account on the target -- saved in that user's profile (reconnects at every sign-in) and connected live too if they are signed in
+    ──────────────────────────────────────────────────
+      === MAP NETWORK DRIVE FOR A USER ===
+      Shared folder : \\Med-fs\underwriting
+      Drive letter  : Y:
+      For account   : ahmad.itani@ngidomain.local
+      Account found : NGIDOMAIN\ahmad.itani  [S-1-5-21-3429172838-3299346912-4181597470-22801]
+      Network check : Med-fs answers on TCP 445 from this PC.
+      Profile       : profile registry already loaded (user is signed in or has a running process)
+      Saved in the user's profile: Y: -> \\Med-fs\underwriting (reconnects at every sign-in)
+      User is signed in -- connecting the drive inside their own session now...
+      Live connection complete: Y: is now available in the user's session. The command completed successfully.
+      Registry mapping complete for NGIDOMAIN\ahmad.itani: Y: -> \\Med-fs\underwriting
+    ✓ Completed in 6.1s
+
+
+============================================================
+  ALL TASKS COMPLETED ✓
+  Finished : 2026-10-06 09:43:24
+  Log saved: AdminTool_ghanima.ngidomain.local_20261006_094317.log
+  © 2024-2026 Abdullah | PC Admin & Performance Tool v3.6 | All Rights Reserved
+============================================================

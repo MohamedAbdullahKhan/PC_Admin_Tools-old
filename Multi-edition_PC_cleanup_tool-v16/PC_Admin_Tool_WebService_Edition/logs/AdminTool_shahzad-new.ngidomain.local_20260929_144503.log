@@ -1,0 +1,35 @@
+============================================================
+  PC ADMIN & PERFORMANCE TOOL  v3.6  -- Web-Service Edition
+  © 2024-2026 Abdullah | PC Admin & Performance Tool v3.6 | All Rights Reserved
+============================================================
+  Target   : shahzad-new.ngidomain.local
+  Username : mabdullahad
+  Transport: ntlm
+  Date/Time: 2026-09-29 14:45:03
+  Tasks    : 1 selected
+  Log File : AdminTool_shahzad-new.ngidomain.local_20260929_144503.log
+============================================================
+
+  Session established
+
+▶ [1/1]  Set Static IP Address
+    netsh interface ipv4 set address ... static -- optionally sets primary/secondary DNS too
+    ──────────────────────────────────────────────────
+      Setting static IP on 'Ethernet': 192.168.6.99 / 255.255.255.0, gateway 192.168.6.1
+      Setting primary DNS: 148.0.0.56
+      The configured DNS server is incorrect or does not exist.
+      Adding secondary DNS: 148.0.0.55
+      The configured DNS server is incorrect or does not exist.
+      === RESULTING CONFIGURATION ===
+      IPv4 Address : 192.168.6.99
+      Gateway      : 192.168.6.1
+      DNS Servers  : 148.0.0.56, 148.0.0.55
+    ✓ Completed in 186.7s
+
+
+============================================================
+  ALL TASKS COMPLETED ✓
+  Finished : 2026-09-29 14:48:10
+  Log saved: AdminTool_shahzad-new.ngidomain.local_20260929_144503.log
+  © 2024-2026 Abdullah | PC Admin & Performance Tool v3.6 | All Rights Reserved
+============================================================

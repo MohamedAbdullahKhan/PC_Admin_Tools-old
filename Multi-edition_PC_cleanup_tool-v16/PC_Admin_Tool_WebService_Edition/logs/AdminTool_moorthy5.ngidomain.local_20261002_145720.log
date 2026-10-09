@@ -1,0 +1,123 @@
+============================================================
+  PC ADMIN & PERFORMANCE TOOL  v3.6  -- Web-Service Edition
+  © 2024-2026 Abdullah | PC Admin & Performance Tool v3.6 | All Rights Reserved
+============================================================
+  Target   : moorthy5.ngidomain.local
+  Username : mabdullahad@ngidomain.local
+  Transport: ntlm
+  Date/Time: 2026-10-02 14:57:20
+  Tasks    : 9 selected
+  Log File : AdminTool_moorthy5.ngidomain.local_20261002_145720.log
+============================================================
+
+  Session established
+
+▶ [1/9]  Clear All Users' Temp Files
+    Removes %TEMP% from every user profile, incl. SYSTEM/service accounts
+    ──────────────────────────────────────────────────
+      Running as : NGIDOMAIN\mabdullahAD
+      Computer   : MOORTHY5
+      Found 10 user profile folder(s) under C:\Users
+      [dhaneshad] Freed 0 MB  (0 items)
+      [jiyadad] Freed 197.24 MB  (3 file(s) skipped -- in use / access denied)
+      [mabdullahad] Freed 4.91 MB  (8 file(s) skipped -- in use / access denied)
+      [michaelad] Freed 7.18 MB  (14 file(s) skipped -- in use / access denied)
+      [moorthy] Freed 0 MB  (0 items)
+      [moorthy.NGIDOMAIN] Freed 5877.7 MB  (25929 file(s) skipped -- in use / access denied)
+      [SYSTEM] Freed 0 MB (3 file(s) skipped -- in use)
+      [LocalService] Freed 0.91 MB (13 file(s) skipped -- in use)
+      [NetworkService] Freed 18.46 MB
+      ------------------------------------------------
+      Profiles processed: 9   |   TOTAL FREED: 6106.40 MB
+      NOTE: 4 profile(s) had files in use and were partially skipped (normal for the logged-in user's active session)
+    ✓ Completed in 412.5s
+
+
+▶ [2/9]  Clear Windows System Temp (C:\Windows\Temp)
+    Deletes files in the Windows system temp directory
+    ──────────────────────────────────────────────────
+      Deleted 1071 items | Freed: 3507.48 MB
+    ✓ Completed in 13.4s
+
+
+▶ [3/9]  Clear Windows Prefetch Files
+    Removes .pf files from C:\Windows\Prefetch
+    ──────────────────────────────────────────────────
+      Removed 372 prefetch files | Freed: 10.54 MB
+    ✓ Completed in 1.3s
+
+
+▶ [4/9]  Clear Thumbnail Cache (All Users)
+    Deletes thumbcache_*.db from all user Explorer profiles
+    ──────────────────────────────────────────────────
+      [jiyadad] Removed 15 files | Freed: 3.01 MB
+      [mabdullahad] Removed 15 files | Freed: 3.01 MB
+      [michaelad] Removed 15 files | Freed: 4.01 MB
+      [moorthy] Removed 0 files | Freed: 0 MB
+      [moorthy.NGIDOMAIN] Removed 15 files | Freed: 27.06 MB
+      Total thumbnail cache freed: 37.09 MB
+    ✓ Completed in 5.1s
+
+
+▶ [5/9]  Clear Windows Update Download Cache
+    Stops WU/BITS, clears SoftwareDistribution\Download, restarts services
+    ──────────────────────────────────────────────────
+      Stopping Windows Update & BITS services...
+      Cache cleared | Freed: 2.16 MB
+      Windows Update & BITS services restarted
+    ✓ Completed in 8.5s
+
+
+▶ [6/9]  Clear Browser Caches (Chrome / Edge / Firefox)
+    Purges browser cache folders for all user profiles
+    ──────────────────────────────────────────────────
+      [dhaneshad] Firefox: Freed 1.19 MB
+      [jiyadad] Microsoft Edge: Freed 35.08 MB
+      [mabdullahad] Microsoft Edge: Freed 5.9 MB
+      [michaelad] Microsoft Edge: Freed 27.87 MB
+      [michaelad] Google Chrome: Freed 8.21 MB
+      [michaelad] Firefox: Freed 0.77 MB
+      [moorthy] Google Chrome: Freed 9.08 MB
+      [moorthy.NGIDOMAIN] Microsoft Edge: Freed 13.69 MB
+      [moorthy.NGIDOMAIN] Google Chrome: Freed 12.53 MB
+      [moorthy.NGIDOMAIN] Firefox: Freed 1011.2 MB
+      TOTAL browser cache freed: 1125.52 MB
+    ✓ Completed in 251.8s
+
+
+▶ [7/9]  Empty Recycle Bin (All Drives & Users)
+    Permanently empties the Recycle Bin on all drives
+    ──────────────────────────────────────────────────
+      Recycle Bin emptied: 0 items removed
+    ✓ Completed in 2.5s
+
+
+▶ [8/9]  Run Disk Cleanup Utility (cleanmgr)
+    Runs Windows built-in Disk Cleanup silently with all categories
+    ──────────────────────────────────────────────────
+      Configuring Disk Cleanup categories...
+      Configured 32 cleanup categories
+      Launching cleanmgr (max wait: 10 minutes)...
+      WARNING: cleanmgr did not finish within 10 minutes. Remote/service
+      sessions have no desktop, so cleanmgr can silently wait forever on a
+      UI dialog nobody can see. Terminating it now.
+      Disk Cleanup was terminated after timeout -- some categories may be incomplete
+    ✓ Completed in 600.7s
+
+
+▶ [9/9]  Optimize / Defragment All Fixed Drives
+    Defragments HDDs; runs TRIM on SSDs (auto-detects drive type)
+    ──────────────────────────────────────────────────
+      Optimizing drive F: (NTFS)...
+      Drive F: optimization complete
+      Optimizing drive C: (NTFS)...
+      Drive C: optimization complete
+    ✓ Completed in 16675.5s
+
+
+============================================================
+  ALL TASKS COMPLETED ✓
+  Finished : 2026-10-02 19:56:52
+  Log saved: AdminTool_moorthy5.ngidomain.local_20261002_145720.log
+  © 2024-2026 Abdullah | PC Admin & Performance Tool v3.6 | All Rights Reserved
+============================================================

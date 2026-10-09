@@ -1,0 +1,110 @@
+============================================================
+  PC ADMIN & PERFORMANCE TOOL  v3.6  -- Web-Service Edition
+  © 2024-2026 Abdullah | PC Admin & Performance Tool v3.6 | All Rights Reserved
+============================================================
+  Target   : mini.ngidomain.local
+  Username : mabdullahad
+  Transport: ntlm
+  Date/Time: 2026-10-02 10:33:38
+  Tasks    : 8 selected
+  Log File : AdminTool_mini.ngidomain.local_20261002_103338.log
+============================================================
+
+  Session established
+
+▶ [1/8]  Clear All Users' Temp Files
+    Removes %TEMP% from every user profile, incl. SYSTEM/service accounts
+    ──────────────────────────────────────────────────
+      Running as : NGIDOMAIN\mabdullahAD
+      Computer   : MINI
+      Found 11 user profile folder(s) under C:\Users
+      [Administrator] Freed 0 MB  (0 items)
+      [jiyadad] Freed 0 MB  (0 items)
+      [mabdullahad] Freed 0 MB  (0 items)
+      [michaelad] Freed 0 MB  (0 items)
+      [mini] Freed 0 MB  (0 items)
+      [mini.NGIDOMAIN] Freed 760.41 MB  (694 file(s) skipped -- in use / access denied)
+      [TEMP] Freed 0 MB  (0 items)
+      [SYSTEM] Freed 0 MB
+      [LocalService] Freed 0.65 MB (13 file(s) skipped -- in use)
+      [NetworkService] Freed 0.22 MB
+      ------------------------------------------------
+      Profiles processed: 10   |   TOTAL FREED: 761.28 MB
+      NOTE: 1 profile(s) had files in use and were partially skipped (normal for the logged-in user's active session)
+    ✓ Completed in 1.3s
+
+
+▶ [2/8]  Clear Windows System Temp (C:\Windows\Temp)
+    Deletes files in the Windows system temp directory
+    ──────────────────────────────────────────────────
+      Deleted 54 items | Freed: 7.8 MB
+    ✓ Completed in 0.6s
+
+
+▶ [3/8]  Clear Windows Prefetch Files
+    Removes .pf files from C:\Windows\Prefetch
+    ──────────────────────────────────────────────────
+      Removed 352 prefetch files | Freed: 6.76 MB
+    ✓ Completed in 0.9s
+
+
+▶ [4/8]  Clear Thumbnail Cache (All Users)
+    Deletes thumbcache_*.db from all user Explorer profiles
+    ──────────────────────────────────────────────────
+      [Administrator] Removed 0 files | Freed: 0 MB
+      [jiyadad] Removed 0 files | Freed: 0 MB
+      [mabdullahad] Removed 0 files | Freed: 0 MB
+      [michaelad] Removed 0 files | Freed: 0 MB
+      [mini] Removed 0 files | Freed: 0 MB
+      [mini.NGIDOMAIN] Removed 15 files | Freed: 6.01 MB
+      Total thumbnail cache freed: 6.01 MB
+    ✓ Completed in 0.6s
+
+
+▶ [5/8]  Clear Windows Update Download Cache
+    Stops WU/BITS, clears SoftwareDistribution\Download, restarts services
+    ──────────────────────────────────────────────────
+      Stopping Windows Update & BITS services...
+      Cache cleared | Freed: 2.64 MB
+      Windows Update & BITS services restarted
+    ✓ Completed in 5.0s
+
+
+▶ [6/8]  Clear Browser Caches (Chrome / Edge / Firefox)
+    Purges browser cache folders for all user profiles
+    ──────────────────────────────────────────────────
+      [Administrator] Microsoft Edge: Freed 0 MB
+      [jiyadad] Microsoft Edge: Freed 0 MB
+      [jiyadad] Google Chrome: Freed 0 MB
+      [michaelad] Microsoft Edge: Freed 0 MB
+      [michaelad] Google Chrome: Freed 0 MB
+      [mini] Microsoft Edge: Freed 0 MB
+      [mini.NGIDOMAIN] Microsoft Edge: Freed 72.03 MB
+      [mini.NGIDOMAIN] Google Chrome: Freed 62.1 MB
+      TOTAL browser cache freed: 134.13 MB
+    ✓ Completed in 0.9s
+
+
+▶ [7/8]  Empty Recycle Bin (All Drives & Users)
+    Permanently empties the Recycle Bin on all drives
+    ──────────────────────────────────────────────────
+      Recycle Bin emptied: 0 items removed
+    ✓ Completed in 0.8s
+
+
+▶ [8/8]  Run Disk Cleanup Utility (cleanmgr)
+    Runs Windows built-in Disk Cleanup silently with all categories
+    ──────────────────────────────────────────────────
+      Configuring Disk Cleanup categories...
+      Configured 32 cleanup categories
+      Launching cleanmgr (max wait: 10 minutes)...
+      Disk Cleanup completed (exit code: 0)
+    ✓ Completed in 32.7s
+
+
+============================================================
+  ALL TASKS COMPLETED ✓
+  Finished : 2026-10-02 10:34:22
+  Log saved: AdminTool_mini.ngidomain.local_20261002_103338.log
+  © 2024-2026 Abdullah | PC Admin & Performance Tool v3.6 | All Rights Reserved
+============================================================

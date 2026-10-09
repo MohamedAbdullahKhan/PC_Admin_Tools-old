@@ -1,0 +1,554 @@
+============================================================
+  PC ADMIN & PERFORMANCE TOOL  v3.6  -- Web-Service Edition
+  © 2024-2026 Abdullah | PC Admin & Performance Tool v3.6 | All Rights Reserved
+============================================================
+  Target   : mini.ngidomain.local
+  Username : mabdullahad
+  Transport: ntlm
+  Date/Time: 2026-10-02 10:42:19
+  Tasks    : 1 selected
+  Log File : AdminTool_mini.ngidomain.local_20261002_104219.log
+============================================================
+
+  Session established
+
+▶ [1/1]  VSS Shadow Copy Storage Report
+    vssadmin list shadowstorage + list shadows -- size/usage per volume and every shadow copy instance
+    ──────────────────────────────────────────────────
+      === VSS SHADOW STORAGE (size/usage per volume) ===
+      vssadmin 1.1 - Volume Shadow Copy Service administrative command-line tool
+      (C) Copyright 2001-2013 Microsoft Corp.
+      Shadow Copy Storage association
+         For volume: (C:)\\?\Volume{8532d272-55aa-4eac-aa2f-62a8da87f847}\
+         Shadow Copy Storage volume: (C:)\\?\Volume{8532d272-55aa-4eac-aa2f-62a8da87f847}\
+         Used Shadow Copy Storage space: 3.38 GB (1%)
+         Allocated Shadow Copy Storage space: 3.75 GB (1%)
+         Maximum Shadow Copy Storage space: 5.00 GB (2%)
+      Shadow Copy Storage association
+         For volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+         Shadow Copy Storage volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+         Used Shadow Copy Storage space: 1.03 GB (0%)
+         Allocated Shadow Copy Storage space: 1.78 GB (0%)
+         Maximum Shadow Copy Storage space: 22.6 GB (10%)
+      === VSS SHADOW COPIES (instances) ===
+      vssadmin 1.1 - Volume Shadow Copy Service administrative command-line tool
+      (C) Copyright 2001-2013 Microsoft Corp.
+      Contents of shadow copy set ID: {1aa3acfa-41c2-487b-a477-6a698fe5484d}
+         Contained 1 shadow copies at creation time: 30/09/2026 2:45:36 PM
+            Shadow Copy ID: {de069782-0b7f-49d8-a5f6-e5de5d2af39e}
+               Original Volume: (C:)\\?\Volume{8532d272-55aa-4eac-aa2f-62a8da87f847}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy1
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ClientAccessibleWriters
+               Attributes: Persistent, Client-accessible, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {9561d4b2-f9c5-47f9-9733-50c85334b93d}
+         Contained 2 shadow copies at creation time: 11/03/2026 12:11:46 PM
+            Shadow Copy ID: {39892da4-191b-4187-976a-ed9c3272606a}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {e18d474e-6ebf-4459-9352-067d542df7a2}
+         Contained 2 shadow copies at creation time: 12/03/2026 8:08:41 AM
+            Shadow Copy ID: {2cff441c-c1a1-4813-b823-53fcd2aa066e}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy3
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {f18ad2c7-dad7-4b37-bc4d-16fa95e79ff6}
+         Contained 2 shadow copies at creation time: 12/03/2026 12:08:56 PM
+            Shadow Copy ID: {4839b856-d245-45f9-8363-e4be577c3e8c}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy4
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {a5ccd45b-31c9-48be-b885-a453685e2e8c}
+         Contained 2 shadow copies at creation time: 13/03/2026 8:02:52 AM
+            Shadow Copy ID: {5b66e77b-9f1f-42b7-af44-f489b2f4128a}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy5
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {eb00029e-acaa-411e-91df-34137ac84596}
+         Contained 2 shadow copies at creation time: 13/03/2026 9:23:43 AM
+            Shadow Copy ID: {e8c4f422-28e8-415d-a710-12ad361e3bda}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy6
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {0650fac6-c8a7-4887-a89d-a93b8fefcfc7}
+         Contained 2 shadow copies at creation time: 13/03/2026 12:24:52 PM
+            Shadow Copy ID: {7b73aab1-1866-4c7d-b611-4771f048afb9}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy7
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {9c6277b0-83a7-468c-8d3c-0e98ea8a093b}
+         Contained 2 shadow copies at creation time: 16/03/2026 8:11:05 AM
+            Shadow Copy ID: {e7490b4a-f9b2-4deb-bed6-5904a307ed1c}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy8
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {438d44eb-858d-4118-9bca-5724d2acf551}
+         Contained 2 shadow copies at creation time: 16/03/2026 12:11:24 PM
+            Shadow Copy ID: {4ea34dfb-8371-4fc4-9103-d5009b4a8f16}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy9
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {164c1966-243c-454e-8133-2e06f83f8bb6}
+         Contained 2 shadow copies at creation time: 17/03/2026 8:06:00 AM
+            Shadow Copy ID: {45f8ac36-d689-4873-8cab-313439302e45}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy10
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {55725ecc-9c18-4b7e-a0cc-ac31a12857ba}
+         Contained 2 shadow copies at creation time: 17/03/2026 10:47:27 AM
+            Shadow Copy ID: {ea0641be-5692-401b-a817-8660c414f3cf}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy11
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential
+      Contents of shadow copy set ID: {3ae1a015-4b26-4294-8406-6d24ab3f93e5}
+         Contained 2 shadow copies at creation time: 18/03/2026 8:15:16 AM
+            Shadow Copy ID: {2079b983-2fbc-4688-96e7-0b177c3ce6d6}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy12
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {84e1c2b6-96e3-49f3-a26b-a21e664078f2}
+         Contained 2 shadow copies at creation time: 18/03/2026 12:15:29 PM
+            Shadow Copy ID: {025950b8-8e9e-49f1-825f-29f129b44a9f}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy13
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {d7089770-8164-4e8c-8365-15d5167b99c2}
+         Contained 2 shadow copies at creation time: 23/03/2026 7:56:11 AM
+            Shadow Copy ID: {18033ab7-824d-4fe6-8d68-b4688a3434e1}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy14
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {81fe3527-613a-4acf-9bd7-71716ca9cb75}
+         Contained 2 shadow copies at creation time: 23/03/2026 9:21:51 AM
+            Shadow Copy ID: {fd5a30b7-1d96-4f2b-a150-85afc6dfb20e}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy15
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {894a8681-2e46-40d6-9113-beff67d1839d}
+         Contained 2 shadow copies at creation time: 23/03/2026 10:47:32 AM
+            Shadow Copy ID: {012f0b2b-8b36-47f9-aacb-dbf61ad3d96d}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy16
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {e23e9112-f6ff-403c-bb59-0d8b44c43de2}
+         Contained 2 shadow copies at creation time: 23/03/2026 2:47:49 PM
+            Shadow Copy ID: {ae712cff-60da-4902-ac62-fa16660024cc}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy17
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {edf9020c-1afa-4dfd-b72a-df61629d0908}
+         Contained 2 shadow copies at creation time: 24/03/2026 7:54:08 AM
+            Shadow Copy ID: {008c5b3d-290d-49d4-b716-4bacf5e42d66}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy18
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {77ba4b70-3584-4bfd-99f5-088e88ae099f}
+         Contained 2 shadow copies at creation time: 24/03/2026 8:16:43 AM
+            Shadow Copy ID: {637ff2b1-64df-47ed-8a0e-321e0330b689}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy19
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential
+      Contents of shadow copy set ID: {9b7eba87-e928-46e0-85f7-378721b7f493}
+         Contained 2 shadow copies at creation time: 24/03/2026 10:02:25 AM
+            Shadow Copy ID: {7ccb70f8-5ac4-4abc-bfa7-e6ca0ff861cc}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy20
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {4562d0dc-a5e8-48ff-88ab-bf794975fb2c}
+         Contained 2 shadow copies at creation time: 24/03/2026 2:02:45 PM
+            Shadow Copy ID: {58ea522a-3ac9-42c7-8a8d-5c16f653bd90}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy21
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {4d7d90f4-7bef-453f-a0c8-22e54f722dc2}
+         Contained 2 shadow copies at creation time: 25/03/2026 8:08:10 AM
+            Shadow Copy ID: {8f450b86-ed1a-467a-83fe-b8a01a7a519e}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy22
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential
+      Contents of shadow copy set ID: {fad5d6b0-8d16-4dbc-a491-be9c630a9b91}
+         Contained 2 shadow copies at creation time: 25/03/2026 12:08:21 PM
+            Shadow Copy ID: {a36656ab-6f13-4994-8b4e-6892e39b8d65}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy23
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {8ba21a7a-1e7c-4a9a-81df-38b52dbc9816}
+         Contained 2 shadow copies at creation time: 25/03/2026 4:08:31 PM
+            Shadow Copy ID: {499d0e67-b3a1-4a43-84a3-7a9346941da8}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy24
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {6146e69d-ec60-4dd7-b2ef-b01d59cd81a3}
+         Contained 2 shadow copies at creation time: 26/03/2026 8:13:34 AM
+            Shadow Copy ID: {0a6edbb6-13c6-4055-8a3a-3bc821a4100d}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy25
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential
+      Contents of shadow copy set ID: {161739ef-6e91-44de-bfdd-cfc5414af0cc}
+         Contained 2 shadow copies at creation time: 26/03/2026 12:13:51 PM
+            Shadow Copy ID: {6f93fd34-baaf-49cb-acd5-805fe6349d9c}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy26
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {c3b436d9-d0d7-467d-a527-6c76d768c34b}
+         Contained 2 shadow copies at creation time: 26/03/2026 4:14:01 PM
+            Shadow Copy ID: {4b6f32a1-abff-4f35-bc50-5e6fc9ba7766}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy27
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {3cc8ea7d-4294-48af-8e7f-8917326e0563}
+         Contained 2 shadow copies at creation time: 30/03/2026 7:59:29 AM
+            Shadow Copy ID: {39607271-04d8-4446-a82c-a0897b3c5973}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy28
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential
+      Contents of shadow copy set ID: {ef7ecfc7-7b7a-489e-9d4a-f578328f2d94}
+         Contained 2 shadow copies at creation time: 30/03/2026 11:59:39 AM
+            Shadow Copy ID: {c08a28b9-33c4-41ac-861f-95f7b5e567ee}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy29
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {572d1f51-a934-450f-872d-94ed2e8d3530}
+         Contained 2 shadow copies at creation time: 30/03/2026 3:59:47 PM
+            Shadow Copy ID: {86051017-5246-4565-8ef7-5434fea68061}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy30
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {6c89f0d9-b299-4950-ac9d-dd62a4013a09}
+         Contained 2 shadow copies at creation time: 31/03/2026 7:59:52 AM
+            Shadow Copy ID: {426be160-dec6-4801-93ab-1d814291a5b6}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy31
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {d9dc9d26-ee42-448b-9651-c79fe0567311}
+         Contained 2 shadow copies at creation time: 31/03/2026 12:01:13 PM
+            Shadow Copy ID: {49373d0a-394e-4d79-9257-76ea85d00ff4}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy32
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {be0e191e-55b4-46bf-9763-c9facdaf54f1}
+         Contained 2 shadow copies at creation time: 31/03/2026 12:03:40 PM
+            Shadow Copy ID: {bae57096-2be2-46d1-a963-833449bf17b9}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy33
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {705b064b-877e-488e-8733-d979040ea811}
+         Contained 2 shadow copies at creation time: 31/03/2026 4:03:57 PM
+            Shadow Copy ID: {58ecf2f5-7a6d-42b9-9709-26f737b5a090}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy34
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {189be44f-5d85-4efc-af04-f2f87c606510}
+         Contained 2 shadow copies at creation time: 01/04/2026 8:00:19 AM
+            Shadow Copy ID: {9f31d725-49ff-4160-9c1f-80297b8ddba8}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy35
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {ef89492d-add0-4974-ac99-e991d34db65d}
+         Contained 2 shadow copies at creation time: 01/04/2026 12:00:38 PM
+            Shadow Copy ID: {82f9d197-38d8-417b-b97b-f6ea8e9d922e}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy36
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {d198a2ec-e333-4f8c-8c39-69870fcea6d2}
+         Contained 2 shadow copies at creation time: 01/04/2026 4:00:49 PM
+            Shadow Copy ID: {a3eb5725-27e0-49dd-8856-95af51cffe2d}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy37
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {225f444f-d17a-4784-9b22-ed7703ae1802}
+         Contained 2 shadow copies at creation time: 02/04/2026 7:51:40 AM
+            Shadow Copy ID: {cb18a082-0805-4b4d-b534-b649fd057df6}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy38
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential
+      Contents of shadow copy set ID: {cdb11566-4d19-4118-849b-0c0319f0fe7f}
+         Contained 2 shadow copies at creation time: 02/04/2026 11:51:48 AM
+            Shadow Copy ID: {c07b1ef4-dbe0-4528-a97f-8ed98b11a9a5}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy39
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {68f86002-9144-4a15-ae70-fcd0ffe7379d}
+         Contained 2 shadow copies at creation time: 02/04/2026 3:51:59 PM
+            Shadow Copy ID: {6963bc81-c5d9-4213-83ea-111d3545903c}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy40
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {89112cd0-0ef2-4ecb-95a2-745c968e03ce}
+         Contained 2 shadow copies at creation time: 03/04/2026 8:03:00 AM
+            Shadow Copy ID: {d33b793e-a6d3-407f-b48c-f2027bd2057d}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy41
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {5cf4b517-92b7-4266-a2fe-c8809bc5e9bb}
+         Contained 2 shadow copies at creation time: 03/04/2026 12:03:10 PM
+            Shadow Copy ID: {c3b305ac-b073-459a-8e52-5336102578a5}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy42
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {782ea7a1-373e-45ec-be7b-20749a82754d}
+         Contained 2 shadow copies at creation time: 03/04/2026 4:03:18 PM
+            Shadow Copy ID: {ebd1107a-ccf9-4690-b8b0-b0f34617ef8e}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy43
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {dc10a499-68d4-4b22-9c75-5612ed0165e0}
+         Contained 2 shadow copies at creation time: 06/04/2026 7:54:02 AM
+            Shadow Copy ID: {5e95a73a-d2b0-497f-8a97-17afdd5b74ab}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy44
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {eea37e6b-25ec-4eb7-82c7-83fb5c54f15e}
+         Contained 2 shadow copies at creation time: 06/04/2026 11:54:17 AM
+            Shadow Copy ID: {681b504f-0629-4265-aeed-68a8c5b2cd44}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy45
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {2d0c4ba5-ec80-461c-9b2a-2c17cc65ff39}
+         Contained 2 shadow copies at creation time: 06/04/2026 3:54:30 PM
+            Shadow Copy ID: {bb989355-c2d9-4f1d-bac5-f600b5c9febf}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy46
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {5fcdbde3-ae8d-40c0-b745-e6de6cd0549f}
+         Contained 2 shadow copies at creation time: 07/04/2026 8:08:02 AM
+            Shadow Copy ID: {663422aa-31c3-46eb-8e11-18d49855652b}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy47
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {d0175f82-da53-46e7-839d-35dcfe52c4a9}
+         Contained 2 shadow copies at creation time: 07/04/2026 12:08:11 PM
+            Shadow Copy ID: {d4d70384-7daf-4f9e-8bc2-6e8e350f2973}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy48
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {f87c481d-f869-452a-8ac1-48bceaaef834}
+         Contained 2 shadow copies at creation time: 07/04/2026 4:08:26 PM
+            Shadow Copy ID: {c024e8a1-9f29-4061-a450-8dd99ecdb612}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy49
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {a2f41e4a-0e9f-4775-8867-2034b0339837}
+         Contained 2 shadow copies at creation time: 08/04/2026 7:59:04 AM
+            Shadow Copy ID: {82fd3a03-9abc-45a2-84b5-1d6744231a2e}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy50
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+      Contents of shadow copy set ID: {6781e4c4-62cd-43fb-aba9-1e26a0db8d1a}
+         Contained 2 shadow copies at creation time: 08/04/2026 11:59:13 AM
+            Shadow Copy ID: {c0b3b25e-bfee-42b7-b277-7577457f0ee3}
+               Original Volume: (D:)\\?\Volume{71bad646-0a5c-4a3e-a647-840c2de34612}\
+               Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy51
+               Originating Machine: MINI.NGIDOMAIN.LOCAL
+               Service Machine: MINI.NGIDOMAIN.LOCAL
+               Provider: 'Microsoft Software Shadow Copy provider 1.0'
+               Type: ApplicationRollback
+               Attributes: Persistent, No auto release, Differential, Auto recovered
+    ✓ Completed in 1.6s
+
+
+============================================================
+  ALL TASKS COMPLETED ✓
+  Finished : 2026-10-02 10:42:22
+  Log saved: AdminTool_mini.ngidomain.local_20261002_104219.log
+  © 2024-2026 Abdullah | PC Admin & Performance Tool v3.6 | All Rights Reserved
+============================================================

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="description" content="Live, in-browser demo of the PC Admin &amp; Performance Tool: 90 Windows admin tasks, Network Push and Ping Host, run against a virtual PC. Nothing is sent anywhere.">
+<title>PC Admin &amp; Performance Tool - Live Demo</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#demo">Skip to the demo</a>
+
+<header class="site">
+  <div class="container">
+    <a class="brand" href="#top">PC ADMIN &amp; PERFORMANCE TOOL<small>LIVE DEMO</small></a>
+    <nav aria-label="Sections">
+      <a href="#demo">Try it</a>
+      <a href="#features">Features</a>
+      <a href="#editions">Editions</a>
+      <a href="#run">Run it for real</a>
+      <a href="#limits">Demo limits</a>
+      <a href="https://github.com/MohamedAbdullahKhan/PC-AdminTools" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="container">
+    <h1>Remote Windows admin, <span>try it live</span> in your browser.</h1>
+    <p class="lead">The PC Admin &amp; Performance Tool runs cleanup, disk, performance, health, network and power tasks on remote Windows PCs over WinRM. This page lets you use the real interface and all <b id="statOps">90</b> tasks against a <b>virtual Windows PC</b> - no install, no login, nothing to break.</p>
+    <div class="cta">
+      <a class="btn pri" href="#demo">Open the live demo</a>
+      <a class="btn sec" href="https://github.com/MohamedAbdullahKhan/PC-AdminTools" rel="noopener">Get the real tool on GitHub</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b id="statOps2">90</b><span>tasks</span></div>
+      <div class="stat"><b id="statCats">9</b><span>categories</span></div>
+      <div class="stat"><b>3</b><span>editions</span></div>
+      <div class="stat"><b id="statDanger">0</b><span>confirm-gated</span></div>
+    </div>
+  </div>
+</div>
+
+<section id="demo" aria-labelledby="demoH">
+  <div class="container">
+    <h2 id="demoH">Live demo</h2>
+    <p class="sub">Pick a scenario below (or tick tasks yourself), press <b>RUN SELECTED TASKS</b> and watch the log. The virtual PC remembers what you change: set a static IP, then run <i>Network Adapter &amp; IP Configuration</i> and you will see the new address.</p>
+    <div class="sim"><b>This is a simulation.</b> A web page cannot open WinRM connections, so every task runs against a pretend PC inside your browser. The wording of the output follows the real tool; the numbers are made up. Nothing you type is sent anywhere - this page has no network access at all.</div>
+
+    <div class="scen" id="scen" aria-label="Guided scenarios"></div>
+
+    <div class="apphead">
+      <h3>PC ADMIN &amp; PERFORMANCE TOOL</h3>
+      <span class="ver">v3.8 &middot; Web-Service Edition &middot; port 3039 &middot; DEMO</span>
+      <span class="cp">&copy; 2024-2026 Abdullah &middot; All Rights Reserved</span>
+    </div>
+    <div class="app" id="app">
+      <div class="left">
+        <div class="panel">
+          <h4>Target Connection</h4>
+          <label for="hostname">Hostname / IP</label>
+          <input type="text" id="hostname" placeholder="e.g. 192.168.1.50 or PC-NAME" autocomplete="off" spellcheck="false">
+          <div class="hint">Demo PC: <b id="hintHost">192.168.1.50</b> or <b id="hintName">DEMO-PC01</b></div>
+          <label for="username">Username (DOMAIN\user or user@domain.local)</label>
+          <input type="text" id="username" autocomplete="off" spellcheck="false">
+          <label for="password">Password</label>
+          <div class="pwrow">
+            <input type="password" id="password" class="pw" autocomplete="off">
+            <span><input type="checkbox" id="showpw"> show</span>
+          </div>
+          <div class="hint">Any username and password work in the demo.</div>
+          <label for="transport">Auth Transport</label>
+          <select id="transport">
+            <option value="ntlm">Windows Domain (NTLM) -- Recommended</option>
+            <option value="basic">Workgroup / Local Account (Basic)</option>
+            <option value="kerberos">Active Directory (Kerberos)</option>
+            <option value="credssp">Admin Double-Hop (CredSSP)</option>
+          </select>
+          <button class="btn-primary" id="btnTest" type="button">Test Connection</button>
+        </div>
+        <div class="tabs" id="tabs" role="tablist" aria-label="Task categories"></div>
+        <div class="tasklist" id="tasklist"></div>
+        <div class="selrow">
+          <button class="btn-ghost" id="btnAll" type="button">Select All</button>
+          <button class="btn-ghost" id="btnNone" type="button">Select None</button>
+        </div>
+        <div class="count" id="count" aria-live="polite">0 tasks selected</div>
+      </div>
+
+      <div class="right">
+        <div class="runrow">
+          <button class="btn-run" id="btnRun" type="button">&#9654; RUN SELECTED TASKS</button>
+          <button class="btn-stop" id="btnStop" type="button" disabled>&#9632; STOP</button>
+          <progress id="prg" value="0" max="100"></progress>
+          <button class="btn-ghost" id="btnLogs" type="button">View Logs</button>
+        </div>
+        <div class="statusline">
+          <span><span class="dot" id="dot">&#9679;</span> <span id="stat">Idle</span> <span class="hint" id="taskline"></span></span>
+          <span class="speed"><label for="speed">Demo speed</label>
+            <select id="speed"><option value="slow">Slow</option><option value="normal" selected>Normal</option><option value="fast">Fast</option></select>
+            <button class="btn-ghost" id="btnClearLog" type="button">Clear log</button>
+            <button class="btn-ghost" id="btnCopy" type="button">Copy log</button>
+          </span>
+        </div>
+        <div class="vpc" id="vpc" aria-label="Virtual PC state">
+          <div><small>Virtual PC</small><b id="vName">-</b></div>
+          <div><small>Network (Ethernet)</small><b id="vNet">-</b></div>
+          <div><small>Link right now</small><b id="vLink">-</b></div>
+          <div><small>Name resolves to</small><b id="vDns">-</b></div>
+          <div><small>Uptime</small><b id="vUp">-</b></div>
+          <div><small>Virtual clock</small><b id="vClock">-</b></div>
+        </div>
+        <details class="vd"><summary>Virtual PC details &amp; reset</summary>
+          <pre id="vDetail"></pre>
+          <button class="btn-ghost" id="btnReset" type="button">Reset virtual PC to defaults</button>
+        </details>
+        <div id="log" role="log" aria-live="off" tabindex="0"></div>
+        <div class="panel logsPanel hidden" id="logsPanel"></div>
+      </div>
+    </div>
+    <p class="hint mt">Tip: tasks always run in list order, not click order - that is why <b>Network Push</b> and <b>Ping Host</b> sit last. Each task has a <b>&lt;/&gt; PowerShell</b> link that shows the real script the tool would send to the target (read-only - never executed here).</p>
+  </div>
+</section>
+
+<section id="features" aria-labelledby="featH">
+  <div class="container">
+    <h2 id="featH">What the tool does</h2>
+    <p class="sub">Everything below is in the demo above.</p>
+    <div class="grid">
+      <div class="card"><h3>90 tasks, 9 categories</h3><p>Cleanup, Disk, Performance, Windows Health, Network, Power Recycle, Remote Tools, Admin Consoles and Network Push. Tick any mix; they run in a fixed, safe order.</p></div>
+      <div class="card"><h3>Typed, validated inputs</h3><p>IPs, masks (or CIDR), computer names, adapter names, service names, drive letters, UNC paths, user accounts and VSS sizes are checked before anything is sent. Try a bad IP in <i>Set Static IP</i>.</p></div>
+      <div class="card"><h3>Confirm before danger</h3><p>Anything that restarts, resets, deletes or can cut the connection is flagged with <b>!</b> and needs a confirmation.</p></div>
+      <div class="card"><h3>Live colour-coded log</h3><p>Every output line is classified as success, warning or error by keyword, with progress and a task counter - exactly like the real log pane.</p></div>
+      <div class="card"><h3>Network changes without drama</h3><p><b>Inline</b> tasks (Set Static IP, DHCP, adapter restarts) expect the connection to drop, never repeat the change, reconnect on the old host <i>and</i> the new IP, then print the new status.</p></div>
+      <div class="card"><h3>Network Push + Ping Host</h3><p>Push-only tasks send the command and report <i>"Static IP set cmd pushed to the target machine"</i> without waiting. <b>Ping Host</b> then watches the old IP, the new IP and what DNS says until you press Stop.</p></div>
+      <div class="card"><h3>Long jobs survive disconnects</h3><p>DISM RestoreHealth, component cleanup and CHKDSK run as a one-shot SYSTEM scheduled task on the target, with periodic "still running" lines.</p></div>
+      <div class="card"><h3>Reboot-aware</h3><p>Rename, force restart and soft-recycle tasks treat the dropped connection as expected and skip the remaining tasks instead of failing noisily.</p></div>
+      <div class="card"><h3>Admin Consoles</h3><p>One-click launchers for Computer Management, Disk Management, Services, Event Viewer, Firewall, a remote PowerShell/cmd and Remote Desktop, pointed at the target.</p></div>
+    </div>
+    <h2 class="mt2">Categories</h2>
+    <table class="cats" id="catTable"><thead><tr><th>Category</th><th>Tasks</th><th>Examples</th></tr></thead><tbody></tbody></table>
+  </div>
+</section>
+
+<section id="editions" aria-labelledby="edH">
+  <div class="container">
+    <h2 id="edH">Three editions, one task library</h2>
+    <p class="sub">All three run PowerShell on the remote PC over WinRM and share the same 90 tasks. Pick the one that suits how you work.</p>
+    <div class="grid">
+      <div class="card"><h3>PowerShell GUI</h3><p>A native Windows form. No Python needed - just run it.</p><span class="tag">PC_Admin_Tool_PowerShell_Edition/</span><span class="tag">PCAdminTool.ps1</span><span class="tag">Run-AdminTool.bat</span></div>
+      <div class="card"><h3>Web-Service</h3><p>A Flask service on port 3039. Anyone on the allowed subnet opens it in a browser - the interface you just used. Runs as a Windows service or on Linux.</p><span class="tag">PC_Admin_Tool_WebService_Edition/</span><span class="tag">app.py</span><span class="tag">install_service.bat</span><span class="tag">install_and_run.sh</span></div>
+      <div class="card"><h3>Python Tk GUI</h3><p>A desktop window written in Python/Tkinter.</p><span class="tag">PC_Admin_Tool_PythonGUI_Edition/</span><span class="tag">PCAdminTool.pyw</span><span class="tag">install_and_run.bat</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="run" aria-labelledby="runH">
+  <div class="container">
+    <h2 id="runH">Run the real tool</h2>
+    <p class="sub">Step by step, no experience needed. Windows 10/11 or Server on the admin PC; the target PCs need WinRM enabled.</p>
+    <ol class="steps">
+      <li><b>Download.</b> Open <a href="https://github.com/MohamedAbdullahKhan/PC-AdminTools" rel="noopener">the GitHub repository</a>, press the green <b>Code</b> button, choose <b>Download ZIP</b>, then right-click the ZIP and <b>Extract All</b>.</li>
+      <li><b>Pick an edition</b> folder (see above). Easiest for beginners: the <b>PowerShell GUI</b> edition.</li>
+      <li><b>PowerShell GUI:</b> double-click <code>Run-AdminTool.bat</code>. <b>Python Tk GUI:</b> install Python 3.9+ from python.org (tick "Add python.exe to PATH"), then double-click <code>install_and_run.bat</code>. <b>Web-Service:</b> install Python the same way, then double-click <code>install_and_run.bat</code> (Windows) or run <code>./install_and_run.sh</code> (Linux), and open <code>http://localhost:3039</code>.</li>
+      <li><b>Allow remote management on a target PC</b> (once, in an administrator PowerShell on that PC): <div class="cmd">Enable-PSRemoting -Force</div></li>
+      <li><b>Connect.</b> Type the target's name or IP, a username like <code>DOMAIN\admin</code> and its password, press <b>Test Connection</b>, tick tasks and press <b>RUN SELECTED TASKS</b>.</li>
+    </ol>
+    <p class="hint">Each edition folder has its own README with the exact details for that version.</p>
+  </div>
+</section>
+
+<section id="limits" aria-labelledby="limH">
+  <div class="container">
+    <h2 id="limH">What this demo is - and is not</h2>
+    <div class="warnbox">
+      <b>Simulated.</b> Real WinRM cannot be done from a web page, so this site never touches a real PC. Output numbers are random; output wording mirrors the real tool. Admin Console tasks only describe what they would launch, because a browser cannot open desktop windows. Real-world timing (SFC, DISM, CHKDSK) is sped up using a virtual clock. The real tool's behaviour on your network can differ - always test on a non-critical PC first.
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">&copy; 2024-2026 Abdullah &middot; PC Admin &amp; Performance Tool v3.8 &middot; All Rights Reserved &middot; This page is a client-side demo and collects nothing.</div>
+</footer>
+
+<script src="ops-data.js"></script>
+<script src="vpc.js"></script>
+<script src="outputs.js"></script>
+<script src="engine.js"></script>
+<script src="ui.js"></script>
+</body>
+</html>
